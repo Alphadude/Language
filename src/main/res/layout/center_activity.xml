@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#00ffff"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAppearance="@style/Base.Theme.AppCompat"
+        android:text="Wazobia is an android app that teaches you the four basic Nigeria langugages"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/yoruba"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textColor="#fff"
+        android:background="@drawable/round_button"
+        android:text="YORUBA"
+        android:layout_above="@+id/etsako"
+        android:layout_alignLeft="@+id/text"
+        android:layout_alignStart="@+id/text"
+        android:layout_marginBottom="11dp" />
+    <Button
+        android:id="@+id/igbo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textColor="#fff"
+        android:text="IGBO"
+        android:background="@drawable/round_button"
+        android:layout_alignBottom="@+id/yoruba"
+        android:layout_toRightOf="@+id/etsako"
+        android:layout_toEndOf="@+id/etsako"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+    <Button
+        android:id="@+id/etsako"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round_button"
+        android:text="ETSAKO"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/hausa"
+        android:layout_alignStart="@+id/hausa"
+        android:layout_marginBottom="33dp" />
+
+    <Button
+        android:id="@+id/hausa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round_button"
+        android:text="HAUSA"
+        android:textColor="#fff"
+        android:layout_above="@+id/igbo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp" />
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="#fff"
+        android:background="@drawable/round_button"
+        android:layout_alignBaseline="@+id/igbo"
+        android:layout_alignBottom="@+id/igbo"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
